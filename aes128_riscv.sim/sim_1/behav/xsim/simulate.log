@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+==============================
+=== AES-128 Encryption Test ===
+==============================
+ENC STATUS = 1
+CT3 = d1be12f4 
+CT2 = 21925c35 
+CT1 = 8a9029a9 
+CT0 = cbf1f0c0 
+==============================
+=== AES-128 Decryption Test ===
+==============================
+CT3 = d1be12f4 
+CT2 = 21925c35 
+CT1 = 8a9029a9 
+CT0 = cbf1f0c0 
+==============================
+DEC STATUS = 1
+DPT3 = 6d6f6e6b
+DPT2 = 6579646c
+DPT1 = 75666679
+DPT0 = 31303234 
+==============================
+=== Simulation Complete ===
+==============================
+$finish called at time : 1925 ns : File "C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Lab6/LAB6.srcs/sim_1/new/tb_counter.v" Line 234

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128_decrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128_encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+WARNING: [VRFC 10-3380] identifier 'aes_ct_w' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:154]
+WARNING: [VRFC 10-3380] identifier 'dec_pt_w' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:219]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Lab6/LAB6.srcs/sim_1/new/tb_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_counter

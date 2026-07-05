@@ -1,0 +1,1537 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Apr 29 12:04:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Lab6/LAB6.srcs/utils_1/imports/synth_1/top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Lab6/LAB6.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25044
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1010.496 ; gain = 466.562
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'aes_ct_w' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:134]
+WARNING: [Synth 8-6901] identifier 'dec_pt_w' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:199]
+WARNING: [Synth 8-6901] identifier 'flush_addr_q' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:202]
+WARNING: [Synth 8-6901] identifier 'flush_addr_q' is used before its declaration [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:206]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/boolean_top.v:14]
+INFO: [Synth 8-6157] synthesizing module 'artix7_pll' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/artix7_pll.v:46]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:117799]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:117799]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2924]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2924]
+INFO: [Synth 8-6155] done synthesizing module 'artix7_pll' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/artix7_pll.v:46]
+INFO: [Synth 8-6157] synthesizing module 'boolean_bram' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/boolean_bram.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'boolean_bram' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/boolean_bram.v:18]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/fpga_top.v:46]
+INFO: [Synth 8-6157] synthesizing module 'dbg_bridge' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dbg_bridge_uart' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_uart.v:38]
+	Parameter UART_DIVISOR_W bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dbg_bridge_uart' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_uart.v:38]
+INFO: [Synth 8-6157] synthesizing module 'dbg_bridge_fifo' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_fifo.v:38]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter ADDR_W bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dbg_bridge_fifo' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_fifo.v:38]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'dbg_bridge' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge.v:39]
+INFO: [Synth 8-6157] synthesizing module 'axi4_cdc' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/axi4_cdc.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_cdc' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/axi4_cdc.v:19]
+INFO: [Synth 8-6157] synthesizing module 'riscv_soc' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_soc.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_axi4_conv' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4lite_axi4_conv.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_axi4_conv' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4lite_axi4_conv.v:46]
+INFO: [Synth 8-6157] synthesizing module 'riscv_top' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_top.v:46]
+INFO: [Synth 8-6157] synthesizing module 'dport_bridge' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:46]
+INFO: [Synth 8-6157] synthesizing module 'dport_bridge_fifo' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:254]
+	Parameter WIDTH bound to: 69 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter ADDR_W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dport_bridge_fifo' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:254]
+INFO: [Synth 8-6157] synthesizing module 'dport_bridge_fifo__parameterized0' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:254]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter ADDR_W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dport_bridge_fifo__parameterized0' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:254]
+INFO: [Synth 8-6155] done synthesizing module 'dport_bridge' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v:46]
+INFO: [Synth 8-6157] synthesizing module 'riscv_core' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_core.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_exec' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_exec.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_alu' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_alu.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_alu' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_alu.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_exec' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_exec.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mmu' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mmu' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mmu_arb' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu_arb.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mmu_arb' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu_arb.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_lsu' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_lsu.v:42]
+INFO: [Synth 8-226] default block is never used [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_lsu.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_lsu' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_lsu.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_csr' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_csr.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_csr' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_csr.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_muldiv' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_muldiv.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_muldiv.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_muldiv' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_muldiv.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_decode' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_decode.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_regfile' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_regfile.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_regfile' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_regfile.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_decode' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_decode.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_fetch' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_fetch.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_fetch' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_fetch.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_core' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_core.v:42]
+INFO: [Synth 8-6157] synthesizing module 'icache' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:46]
+INFO: [Synth 8-6157] synthesizing module 'icache_tag_ram' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache_tag_ram.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'icache_tag_ram' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache_tag_ram.v:46]
+INFO: [Synth 8-6157] synthesizing module 'icache_data_ram' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache_data_ram.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'icache_data_ram' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache_data_ram.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:414]
+INFO: [Synth 8-226] default block is never used [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:429]
+INFO: [Synth 8-6155] done synthesizing module 'icache' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_top' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_top.v:46]
+INFO: [Synth 8-6157] synthesizing module 'soc' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/soc.v:46]
+INFO: [Synth 8-6157] synthesizing module 'irq_ctrl' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'irq_ctrl' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:51]
+INFO: [Synth 8-6157] synthesizing module 'uart_lite' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'uart_lite' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:51]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:51]
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_tap' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_lite_tap.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_tap' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_lite_tap.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi4_arb' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi4_arb_onehot4' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:585]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_arb_onehot4' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:585]
+INFO: [Synth 8-226] default block is never used [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:304]
+INFO: [Synth 8-226] default block is never used [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:545]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_arb' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v:46]
+INFO: [Synth 8-6157] synthesizing module 'spi_lite' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:51]
+INFO: [Synth 8-6157] synthesizing module 'spi_lite_fifo' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:836]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter ADDR_W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'spi_lite_fifo' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:836]
+INFO: [Synth 8-6155] done synthesizing module 'spi_lite' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:51]
+INFO: [Synth 8-6157] synthesizing module 'axi4_retime' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:46]
+INFO: [Synth 8-6157] synthesizing module 'axi4retime_fifo2x46' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:387]
+INFO: [Synth 8-6155] done synthesizing module 'axi4retime_fifo2x46' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:387]
+INFO: [Synth 8-6157] synthesizing module 'axi4retime_fifo2x37' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'axi4retime_fifo2x37' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:228]
+INFO: [Synth 8-6157] synthesizing module 'axi4retime_fifo2x6' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'axi4retime_fifo2x6' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:466]
+INFO: [Synth 8-6157] synthesizing module 'axi4retime_fifo2x39' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'axi4retime_fifo2x39' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:307]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_retime' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v:46]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:51]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'aes128_encrypt' [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_encrypt.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_encrypt' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_encrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aes128_decrypt' [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:1]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].a' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:204]
+WARNING: [Synth 8-6104] Input port '(null)[9].(null)[0].b' has an internal driver [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_decrypt' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/HEEC/aes128_decrypt.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'soc' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/soc.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_soc' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_soc.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/fpga_top.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/boolean_top.v:14]
+WARNING: [Synth 8-7137] Register ram_q_reg in module dbg_bridge_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-7137] Register ram_q_reg in module dport_bridge_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-7137] Register ram_q_reg in module dport_bridge_fifo__parameterized0 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-3936] Found unconnected internal register 'imm12_r_reg' and it is trimmed from '32' to '12' bits. [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_csr.v:216]
+WARNING: [Synth 8-6014] Unused sequential element irq_isr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:114]
+WARNING: [Synth 8-6014] Unused sequential element irq_ipr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:131]
+WARNING: [Synth 8-6014] Unused sequential element irq_iar_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:162]
+WARNING: [Synth 8-6014] Unused sequential element irq_ivr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:223]
+WARNING: [Synth 8-6014] Unused sequential element irq_mer_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v:240]
+WARNING: [Synth 8-6014] Unused sequential element ulite_rx_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:112]
+WARNING: [Synth 8-6014] Unused sequential element ulite_status_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:143]
+WARNING: [Synth 8-6014] Unused sequential element ulite_control_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:161]
+WARNING: [Synth 8-6014] Unused sequential element ulite_control_rst_tx_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:198]
+WARNING: [Synth 8-6014] Unused sequential element rx_err_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v:432]
+WARNING: [Synth 8-6014] Unused sequential element timer_ctrl0_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:110]
+WARNING: [Synth 8-6014] Unused sequential element timer_cmp0_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:147]
+WARNING: [Synth 8-6014] Unused sequential element timer_ctrl1_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:189]
+WARNING: [Synth 8-6014] Unused sequential element timer_cmp1_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v:226]
+WARNING: [Synth 8-7137] Register read_port_q_reg in module axi4_lite_tap has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_lite_tap.v:274]
+WARNING: [Synth 8-7137] Register write_port_q_reg in module axi4_lite_tap has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_lite_tap.v:451]
+WARNING: [Synth 8-7137] Register ram_q_reg in module spi_lite_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element spi_dgier_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:114]
+WARNING: [Synth 8-6014] Unused sequential element spi_ipier_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:156]
+WARNING: [Synth 8-6014] Unused sequential element spi_srr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:181]
+WARNING: [Synth 8-6014] Unused sequential element spi_sr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:345]
+WARNING: [Synth 8-6014] Unused sequential element spi_drr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:379]
+WARNING: [Synth 8-6014] Unused sequential element spi_ssr_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v:393]
+WARNING: [Synth 8-7137] Register ram_q_reg in module axi4retime_fifo2x46 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-7137] Register ram_q_reg in module axi4retime_fifo2x37 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-7137] Register ram_q_reg in module axi4retime_fifo2x6 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-7137] Register ram_q_reg in module axi4retime_fifo2x39 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_q_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "ram_q_reg" dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element gpio_direction_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:113]
+WARNING: [Synth 8-6014] Unused sequential element gpio_input_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:138]
+WARNING: [Synth 8-6014] Unused sequential element gpio_int_mask_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:203]
+WARNING: [Synth 8-6014] Unused sequential element gpio_int_status_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:262]
+WARNING: [Synth 8-6014] Unused sequential element gpio_int_level_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:276]
+WARNING: [Synth 8-6014] Unused sequential element gpio_int_mode_wr_q_reg was removed.  [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:301]
+WARNING: [Synth 8-3848] Net gpio_output_data_in_w in module/entity gpio does not have driver. [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v:320]
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[31] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[30] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[29] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[28] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[27] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[26] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[25] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[24] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[23] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[22] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[21] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[20] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[19] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[18] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[17] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[16] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[15] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[14] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[13] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[12] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[11] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[10] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[9] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[8] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[3] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[2] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[1] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[0] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wvalid_i in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[31] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[30] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[29] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[28] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[27] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[26] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[25] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[24] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[23] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[22] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[21] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[20] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[19] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[18] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[17] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[16] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[15] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[14] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[13] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[12] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[11] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[10] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[9] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[8] in module counter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[31] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[30] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[29] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[28] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[27] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[26] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[25] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[24] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[23] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[22] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[21] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[20] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[19] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[18] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[17] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[16] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[15] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[14] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[13] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[12] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[11] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[10] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[9] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_awaddr_i[8] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wvalid_i in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[3] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[2] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[1] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_wstrb_i[0] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[31] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[30] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[29] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[28] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[27] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[26] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[25] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[24] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[23] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[22] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[21] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[20] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[19] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[18] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[17] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[16] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[15] in module gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_araddr_i[14] in module gpio is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.785 ; gain = 851.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.785 ; gain = 851.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.785 ; gain = 851.852
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1395.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/Constraints.xdc]
+Finished Parsing XDC File [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Project Codes/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1476.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1476.715 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.715 ; gain = 932.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.715 ; gain = 932.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1476.715 ; gain = 932.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'boolean_bram'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'boolean_bram'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'dbg_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'icache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WR_IDLE |                              001 |                               00
+                 WR_DATA |                              010 |                               01
+                 WR_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'boolean_bram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RD_IDLE |                              001 |                               00
+                 RD_WAIT |                              010 |                               01
+                RD_VALID |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'boolean_bram'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                     000001000000 |                             0000
+               STATE_LEN |                     000000001000 |                             0010
+             STATE_ADDR0 |                     000000000001 |                             0011
+             STATE_ADDR1 |                     000000000010 |                             0100
+             STATE_ADDR2 |                     000000000100 |                             0101
+             STATE_ADDR3 |                     100000000000 |                             0110
+             STATE_WRITE |                     001000000000 |                             0111
+              STATE_READ |                     000000100000 |                             1000
+             STATE_DATA0 |                     010000000000 |                             1001
+             STATE_DATA1 |                     000100000000 |                             1010
+             STATE_DATA2 |                     000010000000 |                             1011
+             STATE_DATA3 |                     000000010000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'one-hot' in module 'dbg_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             STATE_FLUSH |                               11 |                               00
+            STATE_LOOKUP |                               01 |                               01
+            STATE_REFILL |                               10 |                               10
+          STATE_RELOOKUP |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'icache'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1476.715 ; gain = 932.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 18    
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 14    
+	   2 Input    1 Bit       Adders := 11    
++---XORs : 
+	   2 Input    128 Bit         XORs := 22    
+	  11 Input     32 Bit         XORs := 2     
+	  10 Input     32 Bit         XORs := 2     
+	   9 Input     32 Bit         XORs := 2     
+	   8 Input     32 Bit         XORs := 2     
+	   7 Input     32 Bit         XORs := 2     
+	   6 Input     32 Bit         XORs := 2     
+	   5 Input     32 Bit         XORs := 2     
+	   4 Input     32 Bit         XORs := 2     
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 63    
+	  12 Input     32 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 631   
+	   4 Input      8 Bit         XORs := 110   
+	   5 Input      8 Bit         XORs := 34    
+	  11 Input      8 Bit         XORs := 144   
+	   2 Input      4 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 5     
+	               69 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               63 Bit    Registers := 1     
+	               58 Bit    Registers := 1     
+	               46 Bit    Registers := 4     
+	               39 Bit    Registers := 2     
+	               37 Bit    Registers := 2     
+	               32 Bit    Registers := 103   
+	               20 Bit    Registers := 4     
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 40    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 133   
++---RAMs : 
+	             256K Bit	(32768 X 8 bit)          RAMs := 4     
+	              64K Bit	(2048 X 32 bit)          RAMs := 2     
+	               5K Bit	(256 X 20 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 6     
+	   4 Input   69 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   63 Bit        Muxes := 2     
+	   2 Input   58 Bit        Muxes := 1     
+	   2 Input   46 Bit        Muxes := 2     
+	   2 Input   39 Bit        Muxes := 1     
+	   2 Input   37 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 266   
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 4     
+	   6 Input   32 Bit        Muxes := 1     
+	   3 Input   20 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   3 Input   15 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 3     
+	   3 Input   13 Bit        Muxes := 1     
+	  12 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 21    
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 21    
+	   4 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 23    
+	   7 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 37    
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 211   
+	   3 Input    1 Bit        Muxes := 13    
+	   7 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_result_w, operation Mode is: A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: Generating DSP mult_result_w, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+DSP Report: operator mult_result_w is absorbed into DSP mult_result_w.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:03 ; elapsed = 00:05:17 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+ Sort Area is riscv_soc__GC0 mult_result_w_0 : 0 0 : 2701 5008 : Used 1 time 0
+ Sort Area is riscv_soc__GC0 mult_result_w_0 : 0 1 : 2307 5008 : Used 1 time 0
+ Sort Area is riscv_soc__GC0 mult_result_w_3 : 0 0 : 2304 4330 : Used 1 time 0
+ Sort Area is riscv_soc__GC0 mult_result_w_3 : 0 1 : 2026 4330 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_encrypt | sbox       | 256x8         | LUT            | 
+|aes128_decrypt | sbox       | 256x8         | LUT            | 
+|aes128_decrypt | sbox       | 256x8         | LUT            | 
+|aes128_decrypt | sbox       | 256x8         | LUT            | 
+|aes128_decrypt | sbox       | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_decrypt | inv_sbox   | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_encrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
+|aes128_decrypt | p_0_out    | 256x8         | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | u_core/u_icache/u_tag0/ram_reg  | 256 x 20(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|top         | u_core/u_icache/u_tag1/ram_reg  | 256 x 20(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|top         | u_core/u_icache/u_data0/ram_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|top         | u_core/u_icache/u_data1/ram_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|top         | u_mem/mem0_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem1_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem2_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem3_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|riscv_muldiv | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:08 ; elapsed = 00:05:22 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:27 ; elapsed = 00:05:42 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | u_core/u_icache/u_tag0/ram_reg  | 256 x 20(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|top         | u_core/u_icache/u_tag1/ram_reg  | 256 x 20(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|top         | u_core/u_icache/u_data0/ram_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|top         | u_core/u_icache/u_data1/ram_reg | 2 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 2      | 
+|top         | u_mem/mem0_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem1_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem2_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
+|top         | u_mem/mem3_reg                  | 32 K x 8(READ_FIRST)   | W |   | 32 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_tag0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_tag0/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_tag1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_tag1/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_data0/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_data0/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_data1/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_top/u_soc/u_core/u_icache/u_data1/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem0_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem1_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem2_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_mem/mem3_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:37 ; elapsed = 00:05:52 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \u_top/u_soc/u_soc/u_uart/txd_q_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \u_top/u_dbg/u_uart/txd_q_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \u_top/u_soc/u_soc/u_spi/spi_ssr_value_q_reg  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \u_top/u_soc/u_soc/u_spi/spi_mosi_q_reg  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:40 ; elapsed = 00:05:55 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:40 ; elapsed = 00:05:55 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:43 ; elapsed = 00:05:57 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:43 ; elapsed = 00:05:58 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:44 ; elapsed = 00:05:58 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:44 ; elapsed = 00:05:58 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|riscv_muldiv | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_muldiv | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFH       |     1|
+|3     |CARRY4     |   256|
+|4     |DSP48E1    |     4|
+|5     |LUT1       |   275|
+|6     |LUT2       |  2179|
+|7     |LUT3       |  2277|
+|8     |LUT4       |  1727|
+|9     |LUT5       |  3391|
+|10    |LUT6       | 18185|
+|11    |MUXF7      |  3691|
+|12    |MUXF8      |  1626|
+|13    |PLLE2_BASE |     1|
+|14    |RAMB18E1   |     2|
+|15    |RAMB36E1   |    36|
+|17    |FDCE       |  3993|
+|18    |FDPE       |    17|
+|19    |FDRE       |   908|
+|20    |FDSE       |     2|
+|21    |IBUF       |     2|
+|22    |OBUF       |     5|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:44 ; elapsed = 00:05:58 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:33 ; elapsed = 00:05:55 . Memory (MB): peak = 2573.676 ; gain = 1948.812
+Synthesis Optimization Complete : Time (s): cpu = 00:05:44 ; elapsed = 00:05:59 . Memory (MB): peak = 2573.676 ; gain = 2029.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.223 . Memory (MB): peak = 2573.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5616 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance u_top/u_dbg/u_uart/txd_q_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance u_top/u_soc/u_soc/u_spi/spi_mosi_q_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance u_top/u_soc/u_soc/u_spi/spi_ssr_value_q_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance u_top/u_soc/u_soc/u_uart/txd_q_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2573.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+Synth Design complete | Checksum: 719a01e1
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 220 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:49 ; elapsed = 00:06:05 . Memory (MB): peak = 2573.676 ; gain = 2203.246
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2573.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Documents/6TH SEMESTER/ANMAYA TECH/RISC-V/Lab6/LAB6.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 12:10:20 2026...

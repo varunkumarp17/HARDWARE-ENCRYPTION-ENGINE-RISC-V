@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1777444449" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/HEEC/aes128_decrypt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../HEEC/aes128_decrypt.v"/>
+        <Attr Name="ImportTime" Val="1776433632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/HEEC/aes128_encrypt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../HEEC/aes128_encrypt.v"/>
+        <Attr Name="ImportTime" Val="1776433589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/artix7_pll.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/artix7_pll.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_arb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/axi4_arb.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/axi4_cdc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/axi4_cdc.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_lite_tap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/axi4_lite_tap.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/axi4_retime.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/axi4_retime.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/axi4lite_axi4_conv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/axi4lite_axi4_conv.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/boolean_bram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/boolean_bram.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/counter_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/counter_defs.v"/>
+        <Attr Name="ImportTime" Val="1777455245"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/counter.v"/>
+        <Attr Name="ImportTime" Val="1777444411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/dbg_bridge.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/dbg_bridge_fifo.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/dbg_bridge_uart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/dbg_bridge_uart.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/dport_bridge.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/dport_bridge.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/fpga/arty/fpga_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/fpga/arty/fpga_top.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/gpio_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/gpio_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/gpio.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/gpio.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/icache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/icache.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/icache_data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/icache_data_ram.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/icache_tag_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/icache_tag_ram.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/irq_ctrl_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/irq_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/irq_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_alu.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_core.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_csr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_csr.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_decode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_decode.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_exec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_exec.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_fetch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_fetch.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_lsu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_lsu.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_mmu.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_mmu_arb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_mmu_arb.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_muldiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_muldiv.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/core/core/rv32imsu/riscv_regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/core/core/rv32imsu/riscv_regfile.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_soc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/riscv_soc.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/riscv_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/riscv_top.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/soc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/soc.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/spi_lite_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/spi_lite.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/spi_lite.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/timer_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/timer_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/timer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/timer.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite_defs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/uart_lite_defs.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/soc/uart_lite.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/soc/uart_lite.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ANMAYA TECH/RISC-V/Project Codes/boolean_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/boolean_top.v"/>
+        <Attr Name="ImportTime" Val="1777093960"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Project Codes/Constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Project Codes/Constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1779876123"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
