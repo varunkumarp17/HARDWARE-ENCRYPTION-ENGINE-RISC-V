@@ -1,4 +1,4 @@
-# Hardware AES-128 Encryption Engine (RISC-V SoC)
+# Hardware AES-128 Encryption Engine (RISC-V)
 
 A fully combinational AES-128 encryption/decryption core written in Verilog HDL, integrated as a memory-mapped peripheral on a RISC-V RV32I SoC (Ultra-Embedded core) running on an FPGA. The RISC-V processor writes plaintext + key over UART, the hardware core computes the ciphertext in a single combinational pass, and the result is read back and verified — all live, on real FPGA hardware.
 
